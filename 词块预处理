@@ -1,0 +1,69 @@
+#coding: utf-8
+import os
+import sys
+
+def ProWorLine(pharse):
+    try:
+        begin, mid, end = None, None, 'O'
+        if pharse.startswith('['):
+            pharse = pharse[1:]
+        if ']' in pharse:
+            pharse, end = pharse.split(']')
+        
+        begin, mid = pharse.split('/')
+        if not begin:
+            begin = 'None'
+        if not mid:
+            mid = 'None'
+       return [begin, mid, str(len(begin)), end]
+    except Exception as e:
+       
+        print (e)
+        raise
+
+def Process(lines):
+    Array = []
+    for line in lines:
+        line = line.decode('utf-8')
+        line = line.strip().split(' ')
+        left_bracket = False
+        bracket_content = []
+        
+        if not line:
+            continue
+        for pharse in line:
+            if not pharse:
+                continue
+            if not left_bracket:
+                if pharse.startswith('['):
+                    left_bracket = True
+                    bracket_content = []
+                    bracket_content.append(ProWorLine(pharse))
+                else:
+                    
+                    Array.append(ProWorLine(pharse))
+            else:
+                bracket_content.append(ProWorLine(pharse))
+                if ']' in pharse:
+                    category = bracket_content[-1][-1]
+                    for i, pharse_line in enumerate(bracket_content):
+                        sign = 'I'
+                        if i == 0:
+                            sign = 'B'
+                        pharse_line[-1] = '%s_%s' % (sign, category)
+                        Array.append(pharse_line)
+                    bracket_content = []
+                    left_bracket = False
+        Array.append([])
+   return Array
+
+if __name__ == '__main__':
+    file_path = sys.argv[1]
+    lines = open(file_path).readlines()
+    pharse_lines = Process(lines)
+    for line in pharse_lines:
+        print ('\t'.join(line).encode('utf-8'))
+        if line and len(line) != 4:
+            print( '    ')
+            exit(0)
+
