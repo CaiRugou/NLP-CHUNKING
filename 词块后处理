@@ -1,0 +1,57 @@
+import sys
+def output(lines,  OneP=False):
+    if  OneP:
+        line = lines[0]
+        sys.stdout.write('%s/%s  ' % (line[0], line[1]))
+    else:
+        sys.stdout.write('[')
+        for i, line in enumerate(lines):
+            if i != 0:
+                sys.stdout.write('  ')
+            try:
+                sys.stdout.write('%s/%s' % (line[0], line[1]))
+            except:
+                print ( sys.stderr, line)
+                raise
+        sys.stdout.write(']')
+        sys.stdout.write(lines[0][-1].split('_')[1])
+        sys.stdout.write('  ')
+
+def main(lines):
+    Phrase = False
+    PhraseList = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            if PhraseList:
+                output(PhraseList)
+                PhraseList = []
+                Phrase = False
+            print
+            continue
+        line = line.split('\t')
+        if Phrase:
+            if line[-1].startswith('B'):#词块开始边界
+                output(PhraseList)
+                PhraseList = []
+                PhraseList.append(line)
+            elif line[-1] == 'O':#词块结束
+                Phrase = False
+                output(PhraseList)
+                output([line], True)
+                PhraseList = []
+            
+            else:
+                PhraseList.append(line)
+        else:
+            if line[-1] == 'O':
+                output([line], True)
+            else:
+                PhraseList.append(line)
+                Phrase = True
+    if PhraseList:
+        output(PhraseList)
+
+if __name__ == '__main__':
+    lines = open("G:/HITCScourse/NLP/project2/result","r",encoding="utf-8").readlines()#读取文本
+    main(lines)
