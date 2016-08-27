@@ -70,8 +70,12 @@ template模板的编写如下图所示：
 ![NO2](http://o84hyclg0.bkt.clouddn.com/chunktemp.png)
 
 ## **最后这里给出相关数据集(仅供学习勿用作商业)**
+
 [训练数据集](http://weibo.com/u/2788354117)
+
 [测试数据集](http://weibo.com/u/2788354117)
+
+[CRF++-0.58](http://weibo.com/u/2788354117)
 
 ## 共同学习
 
