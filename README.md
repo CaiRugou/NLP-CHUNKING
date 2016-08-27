@@ -1,11 +1,11 @@
 # NLP-CHUNKING
 ## 采用条件随机场(CRF++)工具，对训练样本进行训练，得到训练模型
-- [] 训练程序
+- [ ] 训练程序
 
-    命令行：
-    ```bash
-    % crf_learn template_file train_file model_file
-    '''
+命令行：
+```bash
+% crf_learn template_file train_file model_file
+'''
     这个训练过程的时间、迭代次数等信息会输出到控制台上（感觉上是crf_learn程序的输出信息到标准输出流上了），如果想保存这些信息，我们可以将这些标准输出流到文件上，命令格式如下：
     ```bash
     % crf_learn template_file train_file model_file >> train_info_file
