@@ -41,5 +41,18 @@
 - [x] 组块类型定义如下表所示
 
 **组块(Chunk)被定义为具有稳定的内部结构和独立语义角色的非重叠和非递归短语。一个组块由两个或多个词语组成，其中一个词为核心词。**
-![NO0](http://o84hyclg0.bkt.clouddn.com/chunk.png)
+| Category  | Description                 | Example                 | 	
+| :---:     |  :------:                   | :----:		              |
+| BNP  		  | 	Base noun phrase	        |  [市场/n 经济/n]NP      |	
+| BAP     	|   Base adjective phrase 	  |  [公正/a合理/a]BAP      |			
+| BVP      	|   Base verb phrase 	        |  [顺利/a启动/v]BVP 	    |		
+| BDP  	  	| 	Base adverb phrase        |  [已/d 不再/d]BDP       |			
+| BQP    		|   Base quantifier phrase 	  |  [数千/m名/q]BQP 士兵/n |		
+| BTP      	|   Base time phrase          |  [早上/t ８时/t]BTP     |		
+| BFP  	  	|	  Base position phrase      |  [内蒙古/ns东北部/f]BFP |		
+| BNT     	|   Name of an organization	  |  [烟台/ns 大学/n]BNT    |			
+| BNS      	|   Name of a place 	        |  [江苏省/ns铜山县/ns]BNS|		
+| BNZ  	  	| 	Other proper noun phrase	|  [诺贝尔/nr奖/n]BNZ     |		
+| BSV     	|   S-V structure     	      |  [领土/n 完整/a]BSV     |			
+
 
