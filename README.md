@@ -1,4 +1,10 @@
 # NLP-CHUNKING
+## 项目实验环境
+
+- [ ] Python 2.x
+- [ ] CentOS 7.0
+- [ ] CRF++-0.58
+
 ## 采用条件随机场(CRF++)工具，对训练样本进行训练，得到训练模型
 - [x] **模型训练过程**
 ```bash
@@ -71,11 +77,13 @@ template模板的编写如下图所示：
 
 ## **最后这里给出相关数据集(仅供学习勿用作商业)**
 
-[训练数据集](http://weibo.com/u/2788354117)
+下面给出项目中使用的数据集合以及CentOS7.0下的CRF++工具包的百度网盘链接**点击其中一个即可**：
 
-[测试数据集](http://weibo.com/u/2788354117)
+[训练数据集](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
 
-[CRF++-0.58](http://weibo.com/u/2788354117)
+[测试数据集](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
+
+[CRF++-0.58](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
 
 ## 共同学习
 
