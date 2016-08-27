@@ -39,5 +39,7 @@
 [国务院/nt  侨办/j]BNT  发表/v  [新年/t  贺词/n]BNP  本报/r  北京/ns  [12月/t  30日/t]BTP  讯/ng  [新华社/nt  记者/n]BNP  [胡/nr  晓梦/nr]BNP  
 ```
 - [x] 组块类型定义如下表所示
+
+**组块(Chunk)被定义为具有稳定的内部结构和独立语义角色的非重叠和非递归短语。一个组块由两个或多个词语组成，其中一个词为核心词。**
 ![NO0](http://o84hyclg0.bkt.clouddn.com/chunk.png)
 
