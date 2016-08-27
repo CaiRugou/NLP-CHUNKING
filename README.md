@@ -40,4 +40,4 @@
 ```
 - [x] 组块类型定义如下表所示
 ![NO0](http://o84hyclg0.bkt.clouddn.com/chunk.png)
-![NO1](http://o84hyclg0.bkt.clouddn.com/chunkformat.png)
+
