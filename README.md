@@ -56,4 +56,12 @@
 | BNZ  	  	| 	Other proper noun phrase	|  [诺贝尔/nr奖/n]BNZ     |		
 | BSV     	|   S-V structure     	      |  [领土/n 完整/a]BSV     |			
 
+- [x] 数据预处理以及后处理
+- 
+如文中的描述所示，这里给出处理后的样本形式，如下：
+
+![NO1](http://o84hyclg0.bkt.clouddn.com/chunkformat.png)
+
+
+
 
