@@ -63,5 +63,10 @@
 ![NO1](http://o84hyclg0.bkt.clouddn.com/chunkformat.png)
 
 
+- [x] 模型训练过程以及结果
+
+template模板的编写如下图所示：
+
+![NO2](http://o84hyclg0.bkt.clouddn.com/chunktemp.png)
 
 
