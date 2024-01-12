@@ -79,11 +79,11 @@ template模板的编写如下图所示：
 
 下面给出项目中使用的数据集合以及CentOS7.0下的CRF++工具包的百度网盘链接**点击其中一个即可**：
 
-[训练数据集](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
+[训练数据集](https://pan.baidu.com/s/19PwxGVgLcfHjTuBlG9fx9A?pwd=12ab)
 
 [测试数据集](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
 
-[CRF++-0.58](http://pan.baidu.com/disk/home#list/path=%2Fchunking)
+[CRF++-0.58](https://pan.baidu.com/s/1zcHRMGH_4JbCQ1FH-BBpUQ?pwd=12ab)
 
 ## 共同学习
 
